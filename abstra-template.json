@@ -9,12 +9,6 @@
                 "nullable": false
             },
             {
-                "name": "salary",
-                "type": "int4",
-                "unique": true,
-                "nullable": false
-            },
-            {
                 "name": "complement_address",
                 "type": "varchar",
                 "unique": false,

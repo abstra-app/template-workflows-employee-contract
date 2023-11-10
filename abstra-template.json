@@ -1,5 +1,5 @@
 {
-    "tables": {
+    "tables": [{
         "name": "team",
         "data": [],
         "columns": [{
@@ -134,5 +134,5 @@
                 "unique": false,
                 "nullable": false
             }]
-    }
+    }]
 }

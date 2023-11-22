@@ -39,13 +39,6 @@
         "visible": false
       },
       {
-        "id": "get-team-info",
-        "name": "Team Info",
-        "path": "get-team-info",
-        "type": "dash",
-        "visible": false
-      },
-      {
         "id": "update-team",
         "name": "Update Personal data",
         "path": "update-team",
@@ -249,99 +242,6 @@
           "id": "cfxpui7dtuc"
         }
       ]
-    }
-  ],
-  "dashes": [
-    {
-      "path": "get-team-info",
-      "title": "Team Info",
-      "layout": {
-        "props": {},
-        "version": "0.2",
-        "slot": {
-          "01f02e3f-8062-496e-b69c-ec7199446dc1": {
-            "id": "01f02e3f-8062-496e-b69c-ec7199446dc1",
-            "type": "dropdown-input",
-            "colStart": 0,
-            "colEnd": 4,
-            "rowStart": 3,
-            "rowEnd": 6,
-            "props": {
-              "label": "\"Select a team member\"",
-              "multiple": "",
-              "options": "team"
-            },
-            "events": {},
-            "variable": "team_member"
-          },
-          "81cb458d-b475-4aca-9232-079708205e8a": {
-            "id": "81cb458d-b475-4aca-9232-079708205e8a",
-            "type": "pandas-output",
-            "colStart": 0,
-            "colEnd": 11,
-            "rowStart": 9,
-            "rowEnd": 16,
-            "props": {
-              "df": "read_team_member_info(team_member)"
-            },
-            "events": {},
-            "variable": null
-          },
-          "89d70a5b-7377-426b-bf97-47e03849ca07": {
-            "id": "89d70a5b-7377-426b-bf97-47e03849ca07",
-            "type": "text-output",
-            "colStart": 0,
-            "colEnd": 4,
-            "rowStart": 17,
-            "rowEnd": 18,
-            "props": {
-              "text": "\"Team Member's Company Information:\""
-            },
-            "events": {},
-            "variable": null
-          },
-          "de736298-32a7-4a2f-b8e0-9d646eb0d633": {
-            "id": "de736298-32a7-4a2f-b8e0-9d646eb0d633",
-            "type": "pandas-output",
-            "colStart": 0,
-            "colEnd": 11,
-            "rowStart": 19,
-            "rowEnd": 26,
-            "props": {
-              "df": "read_team_member_company_info(team_member)"
-            },
-            "events": {},
-            "variable": null
-          },
-          "f190cc7b-26ce-4149-8d1e-dcea67f38d54": {
-            "id": "f190cc7b-26ce-4149-8d1e-dcea67f38d54",
-            "type": "text-output",
-            "colStart": 0,
-            "colEnd": 5,
-            "rowStart": 7,
-            "rowEnd": 8,
-            "props": {
-              "text": "\"Team Member's Personal Information:\""
-            },
-            "events": {},
-            "variable": null
-          },
-          "f711bd87-7f86-4764-96fb-9c4f30b53592": {
-            "id": "f711bd87-7f86-4764-96fb-9c4f30b53592",
-            "type": "markdown-output",
-            "colStart": 0,
-            "colEnd": 5,
-            "rowStart": 0,
-            "rowEnd": 2,
-            "props": {
-              "text": "\"### Overall Team Information \""
-            },
-            "events": {},
-            "variable": null
-          }
-        }
-      },
-      "file": "get_team_info.py"
     }
   ],
   "scripts": [
